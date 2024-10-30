@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="icon" href="./assets/robo.png" type="image/icon type">
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Attention is All You Need!</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="https://jhahemantx.github.io/portfolio/">Portfolio</a></li>
+          <li><a href="#projects">Components</a></li>
+          <li><a href="#explanation">Explanation</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Attention is All You Need!</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="https://jhahemantx.github.io/portfolio/" onclick="toggleMenu()">Portfolio</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Components</a></li>
+          <li><a href="#explanation" onclick="toggleMenu()">Explanation</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li>
+            <img
+              id="modeToggle2"
+              class="icon color-icon"
+              src="./assets/theme_light.png"
+              src-light="./assets/theme_light.png"
+              src-dark="./assets/theme_dark.png"
+              alt="Color them icon"
+            />
+          </li>
+        </div>
+      </div>
+    </nav>
+
+
+    <section id="profile">
+
+      <div class="section__pic-container">
+        <img
+          src="./assets2/t1.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+ 
+      <div class="section__text">
+        <p class="section__text__p1">I coded entire</p>
+        <h1 class="title">Transformer Architecture</h1>
+        <div class="btn-container">
+          <button class="btn btn-color-2" onclick="location.href='https://github.com/jhahemantx/projects/blob/main/Project2_Transformers_From_Scratch.ipynb'">
+            View Code
+          </button>
+
+          <button class="btn btn-color-2" onclick="location.href='./#explanation'">
+            Explanation
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin_light.png"
+            src-light="./assets/linkedin_light.png"
+            src-dark="./assets/linkedin_dark.png"
+            alt="My LinkedIn profile"
+            class="icon linkedin-icon"
+            onclick="location.href='https://www.linkedin.com/feed/update/urn:li:activity:7252273065584193537/'"
+          />
+          <img
+            src="./assets/github_light.png"
+            src-light="./assets/github_light.png"
+            src-dark="./assets/github_dark.png"
+            alt="My github profile"
+            class="icon github-icon"
+            onclick="location.href='https://github.com/jhahemantx/transformers-from-scratch'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+        <p class="section__text__p1">Know about the</p>
+        <h1 class="title">Key Components</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets2/p1.png"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Positional Encoding</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://medium.com/image-processing-with-python/positional-encoding-in-the-transformer-model-e8e9979df57f'"
+                >
+                Read Blog
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets2/p21.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Self Attention</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html'"
+                >
+                Read Blog
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="./assets2/p3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">Neural Network</h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://medium.com/@kyeg/the-feedforward-demystified-a-core-operation-of-transformers-afcd3a136c4c'"
+                >
+                Read Blog
+                </button>
+                <!-- <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://github.com/'"
+                >
+                  Live Demo
+                </button> -->
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./assets/arrow_light.png"
+          src-light="./assets/arrow_light.png"
+          src-dark="./assets/arrow_dark.png"
+          alt="Arrow icon"
+          class="icon arrow"
+          onclick="location.href='./#explanation'"
+        />
+      </section>
+
+    <section id="explanation">
+
+      <h1 class="title">Transformer Working Explanation</h1>
+   
+
+        <div>
+
+          <div class="section__text">
+            <p class="section__text__p2">Token Embedding</p>
+          </div>
+        
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v1.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+In the Transformer model, each token is represented by a vector called an "embedding," which captures the token's semantic meaning—tokens with similar meanings have similar embeddings.
+
+For an input sequence, the tokens are mapped to their embeddings in a matrix of size T x C, where T=4 is the number of tokens and C=768 is the embedding dimension.
+
+To capture the token's position within the sequence, position embeddings for each position (0 to 3) are also created.
+
+These token and position embeddings are summed to produce position-aware embeddings, all of which are part of the model parameters and tuned during training.
+                       
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Positional Embedding</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v2.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+The Transformer then computes three vectors for each of the T vectors (each of row in the T × C matrix from the previous section): “query”, “key” and “value” vectors. This is done by way of three linear transformations (i.e., multiplying with a weight matrix):
+
+Query - The query vector determines the focus of attention
+Key - The key vector represents the content that could be attended to.
+Value - The value vector holds the information that will be passed along if the attention mechanism finds a match between the query and key.
+
+The weight matrices that produce Q, K, V matrices are all part of θ.
+The query, key and value vectors for each token are packed together into T × C matrices, just like the input embedding matrix. These vectors are the primary participants involved in the main event which is coming up shortly: self-attention.
+
+
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <div>
+
+          <div class="section__text">
+            <p class="section__text__p2">Querry-Key-Value Vectors</p>
+          </div>
+         
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v3.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+Self-attention, as we've alluded to earlier, is the core idea behind the Transformer model.
+
+We first compute an “attention scores” matrix by multiplying the query and key matrices (note that we are only looking at the first head here, but the same operation occurs for all heads):
+
+This matrix tells us how much attention, or weightage, a particular token needs to pay to every other token in the sequence for producing its output, i.e., prediction for the next token. E.g., the token "bring" has an attention score of 0.3 for the token "robot" (row 4, column 2 in matrix A1).
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Applying Self-Attention</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v4.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+The attention score for a token needs to be masked if it occurs earlier in the sequence for a given target token.
+    E.g., in our input phrase: “the robots will bring _____”
+
+It makes sense for the token “bring” to pay attention to the token “robots”, but not vice-versa, because a token should not be allowed to look to the future tokens for making a prediction of its next token.
+
+So we hide the upper-right triangle of the square matrix A1, effectively setting the attention score to 0.
+
+We then bring the third actor onto the stage, the Value matrix V:
+
+The output for the token “robots” is a weighted sum of the Value vectors for the previous token “the” and itself. Specifically, in this case, it applies a 47% weight to the former, and 53% weight to its own Value vector (work out the matrix multiplication between A1(T × T) and V1(T × H) to convince yourself that this is true). The outputs for all other tokens is computed similarly.
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Multi Heads</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v5.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+The final output for each head of self-attention is a matrix Y of dimensions T × H (T = 4, H = 64).
+
+Having computed the output embeddings for all tokens across all 12 heads, we now combine the individual T × H into a single matrix of dimension T × C, by simply stacking them side-by-side:
+
+64 embedding dims per head (H)× 12 heads = 768, the original size of our input embeddings (C).
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Feed Forward Network</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v6.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+Everything we have done up to this point has involved only linear operations - i.e., matrix multiplications. This is not sufficient to capture complex relationships between tokens, so the Transformer introduces a single hidden-layer neural network (also referred to as a feed forward network, or a multi-layer perceptron (MLP)), with non-linearity.
+
+The C length row vectors are transformed to vectors of length (4 * C) by way of a linear transform, a non-linear function like ReLU is applied, and finally the vectors are linearly transformed back to vectors of length C.
+
+All the weight matrices involved in the feed forward network are part of θ.
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Repeat N times</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v7.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+All the steps in Sections 3 to 5 above constitute a single Transformer block. Each block takes as input a T × C matrix, and outputs a T × C matrix.
+
+In order to arm our Transformer model with the ability to capture complex relationships between words, many such blocks are stacked together in sequence:
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Predicting Next Token</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v8.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+Finally, we are ready to make a prediction:
+
+The last output of the last block in the Transformer will give us a C length vector for each of our input tokens. Since we only care about what comes after the last token, “bring”, we look at its vector. A linear transform on this vector - multiplying with another weight matrix of dimensions V × C, where V is the total number of words in our dictionary - will give us a vector of length V.
+
+This vector when normalized gives us a probability distribution over every word in our dictionary, which allows us to the pick the one with the highest probability as the next token.
+
+In this case, our Transformer has assigned a probability of 92% on “prosperity” being the next token, while there's only a 10% chance of “destruction”, so our completed sentence now reads: “the robots will bring prosperity”. I suppose we can now rest easy with the knowledge that AI's imminent takeover of human civilization promises a future of prosperity and well-being, rather than death and destruction.
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+  
+        <div>
+          <div class="section__text">
+            <p class="section__text__p2">Final Result</p>
+          </div>
+          <div class="split-container">
+              <div class="image-container">
+                  <video src="./assets2/v9.mp4" autoplay loop muted playsinline></video>
+                  <!-- <img src="./assets2/input_embedding.png" alt="Transformer Architecture Diagram"> -->
+              </div>
+              <div class="code-container">
+                  <div class="code-scroll">
+                      <pre><code>
+Now that we can predict the next token, we can generate text, one token at a time:
+
+The first token that the model produces is added to the prompt and fed back into it to produce the second token, which is then fed back into it to produce the third, and so on.
+
+The Transformer has a limit on the maximum number of tokens (N) that it can take as input, and therefore as the number of generated tokens increases, eventually we need to either cap the number of tokens to keep only the last N, or devise some other technique for shortening the prompt without losing information from the oldest tokens.
+                      </code></pre>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <p class="section__text__p1">Get in Touch</p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="./assets/email_light.png"
+              src-light="./assets/email_light.png"
+              src-dark="./assets/email_dark.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:jhahemantx@gmail.com">jhahemantx@gmail.com</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="./assets/linkedin_light.png"
+              src-light="./assets/linkedin_light.png"
+              src-dark="./assets/linkedin_dark.png"
+              alt="My LinkedIn profile"
+              class="icon linkedin-icon"
+              onclick="window.open(href='https://www.linkedin.com/in/jhahemantx/')"
+            />
+            <p><a href="https://www.linkedin.com/in/jhahemantx">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+
+    
+
+    
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#profile">Home</a></li>
+            <li><a href="#projects">Components</a></li>
+            <li><a href="#explanation">Explanation</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+      </nav>
+      <p>Copyright &#169; 2024 Hemant Jha.&nbsp All Right Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
